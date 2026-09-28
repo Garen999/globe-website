@@ -1,0 +1,15 @@
+nav,header,footer,main {
+    background-color: #59AC77; color: white; text-align: center; display: block; clear: both;
+}
+
+body {background-color: #074799; width: 900px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+ul {list-style: none;}
+header {height: 50px;}
+footer {height: 50px;}
+nav, body, footer {margin: auto;}
+nav ul li {float: left; width: 140px; text-align: center;}
+nav ul li:hover {background-color: #36ff04; color: #59AC77;}
+nav {height: 28px;}
+main {height: 550px; margin: auto;}
+#Continents, #Oceans, #People, #Nature {float: left; width: 448px; background-color: #59AC77; margin-top: 30px;}
+#globeQuiz {float: right; width: 445px; background-color: #59AC77; margin-top: 30px;}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home page</title>
+<link rel="stylesheet" type="text/css" href="../CSS/Globe.css">
+
+<script>
+
+function displayContinents() {
+    document.getElementById("Continents").style.display="block";
+    document.getElementById("Oceans").style.display="none";
+    document.getElementById("People").style.display="none";
+    document.getElementById("Nature").style.display="none";
+}
+
+function displayOceans() {
+    document.getElementById("Continents").style.display="none";
+    document.getElementById("Oceans").style.display="block";
+    document.getElementById("People").style.display="none";
+    document.getElementById("Nature").style.display="none";
+}
+
+function displayPeople() {
+    document.getElementById("Continents").style.display="none";
+    document.getElementById("Oceans").style.display="none";
+    document.getElementById("People").style.display="block";
+    document.getElementById("Nature").style.display="none";
+}
+
+function displayNature() {
+    document.getElementById("Continents").style.display="none";
+    document.getElementById("Oceans").style.display="none";
+    document.getElementById("People").style.display="none";
+    document.getElementById("Nature").style.display="block";
+}
+
+function showLarge(thisGraphic)
+{thisGraphic.style.width ='445px'; thisGraphic.style.height ='333px'}
+
+function showNormal(thisGraphic)
+{thisGraphic.style.width ='400px'; thisGraphic.style.height ='300px'}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- Page header -->
+<header>
+<h1>The Globe</h1>
+</header>
+
+<!-- Navigation bar -->
+<nav>
+<ul>
+<li><a href="Tundra.html">Tundra</a></li>
+<li><a href="Taiga.html">Taiga</a></li>
+<li><a href="Temperate Forest.html">TF</a></li>
+<li><a href="Tropical Rainforest.html">TRF</a></li>
+<li><a href="Grasslands.html">Grasslands</a></li>
+<li><a href="Desert.html">Desert</a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main>
+<p align = "center">
+<img class="imagebanner" src="../Images/globeBanner1.jpg" width="900" height="300"
+onmouseover="this.src='../Images/globeBanner2.jpg'"
+onmouseout="this.src='../Images/globeBanner1.jpg'">
+</p>
+
+<section>
+<h2>Introduction</h2>
+<p> Earth is the third planet from the Sun and the only known astronomical object to support life. 
+    It has a diameter of approximately 12,742 kilometers and a surface composed of 71% water and 29% land. 
+    The planet's atmosphere, magnetic field, and plate tectonics play critical roles in shaping its environment and enabling complex systems such as climate and weather. 
+    Earth’s geological history spans over 4.5 billion years, during which it has undergone significant transformations through natural processes. 
+    This website provides a comprehensive overview of Earth’s structure, systems, and global phenomena from a scientific perspective.
+</p>
+</section>
+
+<div>
+    <button class="infoButton" onclick="displayContinents()">Continents</button>
+    <button class="infoButton" onclick="displayOceans()">Ocean</button>
+    <button class="infoButton" onclick="displayPeople()">People</button>
+    <button class="infoButton" onclick="displayNature()">Nature</button>
+</div>
+
+<section  id="Continents" style="display: block;">
+<h2>Continents</h2>
+<p> The Earth is home to seven continents, each with its own unique landscapes, cultures, and histories.
+    From the icy tundras of Antarctica to the bustling markets of Asia, every continent offers something special.
+    Africa's wildlife, Europe's architecture, and South America's rainforests are just glimpses of this diversity.
+    North America brings innovation, while Australia blends ancient traditions with modern life.
+    Each continent tells a story through its people, environments, and traditions.
+    Together, they form the colorful fabric of our world—a globe of endless discovery.</p>
+</section>
+
+<section  id="Oceans" style="display: none;">
+<h2>Oceans</h2>
+<p> Covering over 70% of the planet, oceans are vast, mysterious, and full of life.
+    They connect continents, transport goods, and provide food and oxygen for the Earth.
+    From coral reefs to deep trenches, they are home to countless marine species.
+    Oceans influence weather, support livelihoods, and shape our climate systems.
+    Yet, they face threats from pollution, overfishing, and climate change.
+    Protecting our oceans means preserving life on Earth for future generations.
+    They are the heartbeat of our blue planet.</p>
+</section>
+
+<section  id="People" style="display: none;">
+<h2>People</h2>
+<p> Across the globe, billions of people live in cities, villages, mountains, and islands.
+    We speak thousands of languages and celebrate a wide range of cultures and traditions.
+    Our histories are different, but our hopes and dreams often feel the same.
+    From artists and teachers to farmers and scientists, people shape the world every day.
+    We learn from one another, grow together, and solve challenges side by side.
+    Our differences make us interesting—our shared humanity makes us strong.
+    Together, we are the story of Earth.</p>
+</section>
+
+<section  id="Nature" style="display: none;">       
+<h2>Nature</h2>
+<p> Nature is Earth’s greatest gift, filled with beauty, balance, and breathtaking variety.
+    From towering mountains to winding rivers, every landscape tells a story.
+    Forests breathe life into the air, while deserts show resilience in harsh conditions.
+    Animals, plants, and ecosystems all play a vital role in keeping the planet alive.
+    Nature inspires us, nourishes us, and reminds us of our connection to the Earth.
+    But it also needs our care and protection to thrive.
+    When we respect nature, we protect our future.</p>
+</section>
+
+
+<section id="globeQuiz">
+<h2>The Globe Quiz</h2>
+<p> Complete the following quiz to test your knowledge so far</p>
+<form action="">
+What number planet is Earth from the Sun?<br>
+    <input type="number" name="planetNumber" size="25" min="1" max="8" required>
+    <br><br>
+What does each of the 7 Continents offer?<br>
+    <textarea name="continentsOffer" rows="5" cols="45" maxlength="250" required></textarea>
+    <br><br>
+What percentage of Earth is Ocean?<br>
+    <input type="radio" name="percentage" value="50%"> 50
+    <input type="radio" name="percentage" value="60"> 60
+    <input type="radio" name="percentage" value="70%"> 70
+    <input type="radio" name="percentage" value="80%"> 80
+    <br><br>
+How many people live in cities?<br>
+    <select name="peopleCount">
+        <option value="lowest">Thousands</option>
+        <option value="second">Hundreads</option>
+        <option value="third">Millions</option>
+        <option value="most">Billions</option>
+    </select>
+    <br><br>
+What is Earth's greatest gift?<br>
+    <input type="text" name="greatestGift" size="25" maxlength="25" required>
+    <br><br>
+</form>
+
+<img src="../Images/planet.jpg" width="400px" height="300px" float="right"
+onmouseover= "showLarge(this)"
+onmouseout= "showNormal(this)">
+
+</section>
+</main>
+
+<!-- Page Footer -->
+<footer>
+    <p> Email us at: 20GImonioro@colfes.com </p>
+</footer>
+
+</body>
+</html>
